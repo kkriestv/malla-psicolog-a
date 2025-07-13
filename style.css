@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f9fc;
+}
+
+h1 {
+  margin-bottom: 40px;
+  color: #003366;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.ciclo {
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  color: #003040;
+  font-weight: bold;
+}
+
+/* Colores para cada ciclo */
+.ciclo.primer   { background-color: #d4ecff; }   /* Azul claro */
+.ciclo.segundo  { background-color: #d0ffd6; }   /* Verde claro */
+.ciclo.tercer   { background-color: #fff3c2; }   /* Amarillo pastel */
+.ciclo.cuarto   { background-color: #ffd4d4; }   /* Rosado claro */
+.ciclo.quinto   { background-color: #f2e0ff; }   /* Lila claro */
+.ciclo.sexto    { background-color: #e0f7f4; }   /* Verde agua */
+.ciclo.septimo  { background-color: #ffe2c6; }   /* Melón pastel */
+.ciclo.octavo   { background-color: #e2e2ff; }   /* Azul lavanda */
+.ciclo.noveno   { background-color: #d9f0ff; }   /* Celeste suave */
+.ciclo.decimo   { background-color: #fff0d9; }   /* Beige pastel */
+
+.ciclo:hover {
+  transform: scale(1.02);
+  opacity: 0.95;
+}
+
+.cursos {
+  display: none;
+  margin-top: 15px;
+  text-align: left;
+  padding-left: 20px;
+  font-weight: normal;
+}
